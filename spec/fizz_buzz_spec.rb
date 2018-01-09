@@ -1,7 +1,7 @@
 require './lib/fizz_buzz'
 
 describe 'fizz_buzz' do
-  # This part of the code is almost a rip off from Antonella
+  # This part of the code is a brutal copy of others in the prep-course
 
   it "returns 'Fatal' if number is not an integer" do
     expect(fizz_buzz('Text')).to eq 'Please insert a number.'
@@ -13,7 +13,7 @@ describe 'fizz_buzz' do
 
   # To here
 
-  it 'returns 1 if number is 1' do
+  it 'returns the number if no other conditions are met' do
     expect(fizz_buzz(1)).to eq 1
   end
 
@@ -28,6 +28,4 @@ describe 'fizz_buzz' do
   it "returns 'fizz' if number is divisible by 3" do
     expect(fizz_buzz(3)).to eq 'fizz'
   end
-
-
 end

@@ -5,6 +5,10 @@ def fizz_buzz(number)
     'buzz'
   elsif (number % 3).zero?
     'fizz'
+  elsif number == String
+    "That's a string, idiot"
+  elsif number < 0
+    'Give me a positive number, you moron'
   else
     number
   end
@@ -13,5 +17,3 @@ end
 def zero_remainder?(number, divider)
   (number % divider).ZERO.zero?
 end
-
-# i was not able to insert a sad path... even when looking at others code! Arg!
