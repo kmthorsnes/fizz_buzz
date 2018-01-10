@@ -1,14 +1,12 @@
 def fizz_buzz(number)
-  if (number % 15).zero?
+  if (number.is_a? String) || (number < 0)
+    "Don't be naugthy, insert a positive NUMBER!"
+  elsif (number % 15).zero?
     'fizzbuzz'
   elsif (number % 5).zero?
     'buzz'
   elsif (number % 3).zero?
     'fizz'
-  elsif number == String
-    "That's a string, idiot"
-  elsif number < 0
-    'Give me a positive number, you moron'
   else
     number
   end
